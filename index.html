@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> Battle </title>
+	<link id="css" rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="timer"> 
+		<p class="cd" id="heaventime"> Heaven </p>
+		<p class="cd"id="earthtime"> Earth </p>
+		<p class="cd"id="hellt	ime"> Hell </p>
+	</div>
+
+	<div id="logo">
+		<p id="logo1">Minority Dice</p>
+		<p id="sl"> Powered by smart contracts</p>
+	</div>
+
+	<div id="navbar">
+		<div class="nav" id="n1" onclick="one()"> 0.05 ETH </div>
+		<div class="nav" id="n2" onclick="two()"> 0.1 ETH </div>
+		<div class="nav" id="n3" onclick="three()"> 0.25 ETH</div>
+		<div class="nav" id="n4" onclick="four()"> 0.5 ETH </div>
+		<div class="nav" id="n5" onclick="five()"> 1 ETH </div>
+		<div class="nav" id="n6" onclick="six()"> Unlock Metamask </div>
+	</div>
+
+	<div id="mainwrap"> 
+	
+		<div id="main">
+			<p> Welcome to Minority dice! </p>
+
+			Minority Dice is a true-random dice DAPP in the Ethereum blockchain. <br> Results of each round is determined by players. <br> <br>
+
+			How to play: <br>
+			 <br>
+			A dice is rolled and players choose between selections <br> BIG or SMALL  <br><br>
+
+			The result of the dice is determined by the total amount wagered on each selection.  <br>
+			The choice of the majority loses to the minority. <br>
+			Players from the winning selection will share the whole amount collected from the losing selection.
+
+
+		</div>
+
+		<div id="example"> 
+
+			<p id="p1"> <b>BIG<b/> <br>
+			Total wager: <br>5 ETH <br>
+			</p>
+
+			<p id="p2">
+			<b>SMALL<b/> <br>
+			Total wager: <br> 2 ETH <br>
+			</p> <br>
+			SMALL wins! <br><br>
+
+			Total payout:
+
+			5/2 = 2.5x <br>
+			Winners earn 2.5x their wager
+		</div>
+		<div id="example2">
+			<p id="p3"> <b>BIG<b/> <br>
+			Total wager: <br>3 ETH <br>
+			</p>
+
+			<p id="p4">
+			<b>SMALL<b/> <br>
+			Total wager: <br> 3 ETH <br>
+			</p> <br> <br>
+			PUSH! <br><br>
+			Total pot will be shared by next round's winner.
+		</div>
+ 
+	</div>
+
+
+	<div id="gamediv"> 
+
+
+		<div class="label" id="hlabel"> Roll 1
+				<p class="cd" id="timer1"> 1 </p>
+		</div>
+		<div class="past"> Result </div>
+		<div class="sclass" id="ssel">SMALL 
+		<p class="address" id="small"> 0xE538285fC307ff7712Adc23fE031C3eBb5F08d7d </p>
+		<h2 class="sendbtn"> Send via Metamask </h2>
+		</div>
+		<div class="hclass" id="bsel">BIG 
+		<p class="address" id="big"> 0xE538285fC307ff7712Adc23fE031C3eBb5F08d7d </p>
+		<h2 class="sendbtn"> Send via Metamask </h2>
+		</div>	
+
+
+
+		</div>	
+</div>
+<script src="main.js"></script>
+
+
+ </body>
+
+</html>
